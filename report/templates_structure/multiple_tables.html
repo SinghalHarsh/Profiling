@@ -1,0 +1,15 @@
+{% for table_i in range(contents|length) %}
+    <div class="col-sm-{{ size }}">
+        <p class="h4"> {{ headings[table_i] }}</p>
+            <table class="table table-condensed stats table-hover">
+                <tbody>
+                    {% for row in contents[table_i] %}
+                        <tr{% if row["alert"] %} class="alert"{% endif %}>
+                            <th>{{ row['name'] }}</th>
+                            <td>{{ row['value'] }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+    </div>
+{% endfor %}
