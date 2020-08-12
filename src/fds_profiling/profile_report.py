@@ -7,8 +7,8 @@ from fds_profiling.config import config
 from fds_profiling.model.associations import associations
 from fds_profiling.visualisation.network import networkplot
 
-import sys
-sys.path.insert(0, '/Users/harsh/Desktop/DATA_SCIENCE/PandasProfiling/')
+# import sys
+# sys.path.insert(0, '/Users/harsh/Desktop/DATA_SCIENCE/PandasProfiling/')
 
 
 def profiling(dataframe, output_file="fds_profiling.html", user_metrics=[], title="FDS PROFILING", target_variable=None):

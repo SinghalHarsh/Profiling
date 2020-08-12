@@ -1,0 +1,8 @@
+# Configuration
+include src/fds_profiling/*.yaml
+
+# Styles
+include src/fds_profiling/visualisation/*.mplstyle
+
+# Templates and static resources
+recursive-include src/fds_profiling/report/templates_structure *.html *.js *.css
