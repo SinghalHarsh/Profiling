@@ -1,3 +1,5 @@
+include requirements*.txt
+
 # Configuration
 include src/fds_profiling/*.yaml
 
